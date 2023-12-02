@@ -2,9 +2,14 @@ import sys
 from pathlib import Path
 
 
-def get_lines(file):
+def get_lines(file: Path) -> list[str]:
     lines = Path(file).read_text().strip("\n").split('\n')
     return lines
+
+
+def get_text(file: Path) -> str:
+    text = Path(file).read_text().strip("\n")
+    return text
 
 
 def aoc_main(module_name):

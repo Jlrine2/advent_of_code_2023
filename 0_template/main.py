@@ -13,8 +13,8 @@ d
 e
 f
 """.strip("\n").split("\n")
-PART_1_SAMPLE_ANSWER = 142
-PART_2_SAMPLE_ANSWER = 281
+PART_1_SAMPLE_ANSWER = 1
+PART_2_SAMPLE_ANSWER = 2
 INPUT = get_lines((Path(__file__).parent / "inputs.txt").absolute())
 
 
