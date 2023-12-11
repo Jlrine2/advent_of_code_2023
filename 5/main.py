@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aoc_utils import get_lines, aoc_main, get_text
+from aoc_utils import parse_lines, aoc_main, get_text
 
 SAMPLE_INPUT_1 = """
 seeds: 79 14 55 13

@@ -3,7 +3,7 @@ import time
 from pathlib import Path
 
 
-def get_lines(file: Path) -> list[str]:
+def parse_lines(file: Path) -> list[str]:
     lines = Path(file).read_text().strip("\n").split('\n')
     return lines
 

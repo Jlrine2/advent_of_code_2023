@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aoc_utils import get_lines, aoc_main
+from aoc_utils import parse_lines, aoc_main
 
 SAMPLE_INPUT_1 = """
 Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
@@ -19,7 +19,7 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
 """.strip("\n").split("\n")
 PART_1_SAMPLE_ANSWER = 8
 PART_2_SAMPLE_ANSWER = 2286
-INPUT = get_lines((Path(__file__).parent / "inputs.txt").absolute())
+INPUT = parse_lines((Path(__file__).parent / "inputs.txt").absolute())
 
 
 def part_1(lines):

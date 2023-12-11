@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aoc_utils import get_lines, aoc_main
+from aoc_utils import parse_lines, aoc_main
 
 from collections import Counter
 
@@ -21,7 +21,7 @@ QQQJA 483
 """.strip("\n").split("\n")
 PART_1_SAMPLE_ANSWER = 6440
 PART_2_SAMPLE_ANSWER = 5905
-INPUT = get_lines((Path(__file__).parent / "inputs.txt").absolute())
+INPUT = parse_lines((Path(__file__).parent / "inputs.txt").absolute())
 
 
 def get_tie_breaker_value(hand, cards):

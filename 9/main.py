@@ -1,5 +1,5 @@
 from pathlib import Path
-from aoc_utils import get_lines, aoc_main
+from aoc_utils import parse_lines, aoc_main
 
 SAMPLE_INPUT_1 = """
 0 3 6 9 12 15
@@ -14,7 +14,7 @@ SAMPLE_INPUT_2 = """
 """.strip("\n").split("\n")
 PART_1_SAMPLE_ANSWER = 114
 PART_2_SAMPLE_ANSWER = 2
-INPUT = get_lines((Path(__file__).parent / "inputs.txt").absolute())
+INPUT = parse_lines((Path(__file__).parent / "inputs.txt").absolute())
 
 
 def recursive_solver(numbers):
@@ -38,6 +38,7 @@ def part_2(lines):
         numbers = [int(i) for i in reversed(line.split())]
         solution += recursive_solver(numbers)
     return solution
+
 
 if __name__ == '__main__':
     aoc_main(__name__)

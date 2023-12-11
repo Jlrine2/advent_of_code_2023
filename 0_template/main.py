@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aoc_utils import get_lines, aoc_main
+from aoc_utils import parse_lines, aoc_main
 
 SAMPLE_INPUT_1 = """
 a
@@ -15,7 +15,7 @@ f
 """.strip("\n").split("\n")
 PART_1_SAMPLE_ANSWER = 1
 PART_2_SAMPLE_ANSWER = 2
-INPUT = get_lines((Path(__file__).parent / "inputs.txt").absolute())
+INPUT = parse_lines((Path(__file__).parent / "inputs.txt").absolute())
 
 
 def part_1(lines):

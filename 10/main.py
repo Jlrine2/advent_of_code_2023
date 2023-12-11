@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from aoc_utils import get_lines, aoc_main
+from aoc_utils import parse_lines, aoc_main
 
 from matplotlib.path import Path as mPath
 
@@ -25,7 +25,7 @@ SAMPLE_INPUT_2 = """
 """.strip("\n").split("\n")
 PART_1_SAMPLE_ANSWER = 8
 PART_2_SAMPLE_ANSWER = 4
-INPUT = get_lines((Path(__file__).parent / "inputs.txt").absolute())
+INPUT = parse_lines((Path(__file__).parent / "inputs.txt").absolute())
 
 
 class Node:
